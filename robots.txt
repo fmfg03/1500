@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /standards
+Allow: /governance
+Allow: /best-practices
+Allow: /implementation
+
+# Preserve Wikipedia-cited paths
+Allow: /modules.php
