@@ -1,9 +1,40 @@
 User-agent: *
 Allow: /
-Allow: /standards
-Allow: /governance
-Allow: /best-practices
-Allow: /implementation
 
-# Preserve Wikipedia-cited paths
-Allow: /modules.php
+# Most linked paths (from backlink analysis)
+Allow: /$
+Allow: /modules.php*
+Allow: /index.php*
+Allow: /backend.php*
+Allow: /newreply.php*
+Allow: /specials*
+Allow: /banners*
+Allow: /int_cf/*
+
+# Forum and profile paths
+Allow: /modules.php?name=Forums*
+Allow: /modules.phpname=Forums&file=profile*
+Allow: /forum/*
+Allow: /forums/*
+Allow: /profile/*
+Allow: /user/*
+
+# Standards and documentation
+Allow: /*ITIL*
+Allow: /*BS15000*
+Allow: /iso*
+Allow: /iec*
+Allow: /20000*
+Allow: /standards*
+Allow: /governance*
+Allow: /best-practices*
+Allow: /implementation*
+
+# File types
+Allow: /*.html
+Allow: /*.php
+Allow: /*.aspx
+Allow: /*.jsp
+
+# Clean crawling
+Sitemap: https://15000.net/sitemap.xml
